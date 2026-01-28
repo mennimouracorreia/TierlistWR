@@ -1,89 +1,102 @@
-
-      <!DOCTYPE html><html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <title>Tier List - Wild Rift</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-    }
-    .tier {
-      margin-bottom: 20px;
-      padding: 10px;
-      border-radius: 8px;
-    }
-    .s { background: #16a34a; }
-    .a { background: #2563eb; }
-    .b { background: #ca8a04; }
-    .c { background: #dc2626; }.champions {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-top: 10px;
-}
-
-.champion {
-  background: #020617;
-  padding: 8px 12px;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.champion:hover {
-  background: #1e293b;
-}
-
-  </style>
-</head>
-<body><h1>Tier List – Wild Rift</h1>
-<p style="text-align:center">Clique no campeão para ver a dica</p><div class="tier s">
-  <strong>S Tier</strong>
-  <div class="champions">
-    <a href="nocturne.html" class="champion">Nocturne</a>
-  <a href="lillia.html" class="champion">Lillia</a>
-  <a href="camille.html"class="champion">Camille</a>
-  </div>
-</div><div class="tier a">
-  <strong>A Tier</strong>
-  <div class="champions">
-    <div class="champion" onclick="alert('maokai: otime tank com os novos itens')">maokai</div>
-  </div>
-</div><div class="tier b">
-  <strong>B Tier</strong>
-  <div class="champions">
-    <div class="champion" onclick="alert('master yi: otimo latergame ')">master yi</div>
-  </div>
-</div><div class="tier c">
-  <strong>C Tier</strong>
-  <div class="champions">
-    <div class="champion" onclick="alert('bom lutador contra compa')">olaf</div>
-  </div>
-</div></body>
-</html><!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tier List Wild Rift</title>
+  <style>
+    /* Background com gradiente */
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      color: #e5e7eb;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      min-height: 100vh;
+    }
 
-  <title>HTML</title>
-  
-  <!-- HTML -->
-  
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 5px #000;
+    }
 
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
+    h2 {
+      font-size: 2em;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    /* Cores diferentes por Tier */
+    .tier-S { background-color: #facc15; color: #000; }
+    .tier-A { background-color: #3b82f6; color: #fff; }
+    .tier-B { background-color: #10b981; color: #fff; }
+    .tier-C { background-color: #f87171; color: #fff; }
+
+    .champ-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .champ-buttons a {
+      background-color: rgba(31, 41, 55, 0.9);
+      color: #e5e7eb;
+      padding: 12px 25px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: all 0.2s;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .champ-buttons a:hover {
+      background-color: #3b82f6;
+      transform: scale(1.1);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+    }
+
+    /* Responsivo */
+    @media (max-width: 600px) {
+      .champ-buttons a {
+        padding: 10px 15px;
+        font-size: 1em;
+      }
+    }
+  </style>
 </head>
-
 <body>
-  <p>Nothing to see here...</p>
-  <!-- Project -->
-  <script src="main.js"></script>
+  <h1>Tier List Wild Rift</h1>
+
+  <!-- Tier S -->
+  <h2 class="tier-S">Tier S</h2>
+  <div class="champ-buttons">
+    <a href="nocturne.html">Nocturne</a>
+    <a href="lillia.html">Lillia</a>
+    <a href="camille.html">Camille</a>
+  </div>
+
+  <!-- Tier A -->
+  <h2 class="tier-A">Tier A</h2>
+  <div class="champ-buttons">
+    <!-- Adicione novos campeões Tier A aqui -->
+  </div>
+
+  <!-- Tier B -->
+  <h2 class="tier-B">Tier B</h2>
+  <div class="champ-buttons">
+    <!-- Adicione novos campeões Tier B aqui -->
+  </div>
+
+  <!-- Tier C -->
+  <h2 class="tier-C">Tier C</h2>
+  <div class="champ-buttons">
+    <!-- Adicione novos campeões Tier C aqui -->
+  </div>
 </body>
 </html>
